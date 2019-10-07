@@ -100,7 +100,9 @@ a:hover{
     display: inline-block;
     max-width: 40%;
 }
-
+.title p{
+    font-size: 0.9em
+}
 .program-img {
     background-color: var(--primary);
     padding: 2em 2em 2em 2em;
