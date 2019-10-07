@@ -3,7 +3,7 @@ html{
 /** Font Sets **/
     --font-a: 'Maven Pro', sans-serif;
     --font-b: 'Roboto', sans-serif;
-    /** Background Colours **/
+/** Background Colours **/
     --primary: #dbdbdb;
     --primary-a: #464545;
     --primary-b: #ffffff;
@@ -14,7 +14,7 @@ html{
 }
 
 main {
-    background: #267dcf;
+    background: var(--secondary);
     padding: 0em 2em 2em 2em;
 }
 
