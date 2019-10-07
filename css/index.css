@@ -1,56 +1,75 @@
-@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700&display=swap');
-html {
-	/*** Font Sets ***/
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Roboto:700i&display=swap');
+html{    
+/*** Font Sets ***/
     --font-a: 'Maven Pro', sans-serif;
-	
+    --font-b: 'Roboto', sans-serif;
     /*** Background Colours ***/
     --primary: #dbdbdb;
-    --primary-a: #dadada;
-    --primary-b: #000003;
-    --secondary: #ffffff;
-    --secondary-a: #ffffff;
-    --secondary-b: #bebeb8;
-    --error: #b00020;
-    --links: #90E0F3;
+    --primary-a: #464545;
+    --primary-b: #ffffff;
+    --secondary: #267dcf;
+    --secondary-a: #1d5183;
+    --error: #ff0835;
+    --links: #a1fcff;
 
-    /*** Foreground Colours ***/
-    --on-primary: #6d6a6a;
-    --on-secondary: #495a79;
-    --on-error: #ffffff;
 }
+
+main {
+    background: #267dcf;
+    padding: 0em 2em 2em 2em;
+}
+
+main h2 {
+    font-size: 1.15em;
+}
+
 body {
 	background-color: var(--secondary);
-    color: var(--on-secondary);
+    color: var(--primary-b);
 	font-size: 1rem;
 	font-family: 'Maven Pro', sans-serif;
 }
-.logo {
-    max-width: 10%;
-    height: auto'
+
+.title {
+    color: var(--primary-b);
+    font-family: var(--font-b), sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    padding: 1em;
 }
 
-.icon {
-    display: inline;
-    max-width: 55%;
-    border: 0;
+.articles {
+    color: var(--primary-a);
+    background-color: var(--primary);
+    font-family: var(--font-a), sans-serif;
+    font-size: 1em;
+    padding: 1em 2em 1em 2em;
+    text-align: center;
 }
+
+.articles p{
+    margin: 1em 0 0 0;
+}
+
 a{
     text-decoration: none;
-    color: var(--on-primary);
+    color: var(--primary-a);
 }
 
 a:hover{
     text-decoration: underline;
 }
+
 .header{
     background-color: var(--primary);
     text-align: center;
 }
 
 .header h1{
-    color: var(--on-primary);
-	font: bold normal 1em/1 var(--font-b) , sans-serif;
-	text-align: center;
+    color: var(--primary-a);
+    font: bold normal 1.5em var(--font-b) , sans-serif;
+    margin: 2em 0 0 0;
 }
 
 .menu {
@@ -58,8 +77,9 @@ a:hover{
 }
 
 .menu ul{
-    margin: 1em 0 1em 0;
+    margin: 2em 0 1em 0;
 }
+
 .menu button{
     display: inline;
     background-color: transparent;
@@ -69,6 +89,79 @@ a:hover{
 
 .menu li{
     margin: 0.75em 0 0.75em 0;
-    color: var(--on-primary);
+    color: var(--primary-a);
 }
 
+.logo {
+    max-width: 15%;
+    padding: 1em;
+}
+
+.icon {
+    display: inline-block;
+    max-width: 40%;
+}
+
+.program-img {
+    background-color: var(--primary);
+    padding: 2em 2em 2em 2em;
+}
+
+.footer {
+    background-color: var(--secondary-a);
+    text-align: center;
+
+}
+
+.footer h1{
+    color: var(--primary-b);
+    padding: 1em;
+}
+
+.contact a{
+    color: var(--links);
+}
+
+.contact li{
+    margin: 1em 0 1em 0;
+} 
+
+@media screen and (min-width: 450px){
+    body{
+        font-size: 0.8em;
+    }
+    main>div{
+        max-width: 450px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 850px) {
+body{
+    font-size: 0.9em;
+    }
+main>div{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+.program-img {
+    align-items: center;
+   
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    main>div{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1100px;
+    }
+    .menu button {
+        display: none;
+    }
+    .menu li {
+        display: inline;
+        padding: 1em 3em 0em 3em;
+    }
+}
