@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro|Roboto:700i&display=swap');
 html{    
-/*** Font Sets ***/
+/** Font Sets **/
     --font-a: 'Maven Pro', sans-serif;
     --font-b: 'Roboto', sans-serif;
-    /*** Background Colours ***/
+    /** Background Colours **/
     --primary: #dbdbdb;
     --primary-a: #464545;
     --primary-b: #ffffff;
