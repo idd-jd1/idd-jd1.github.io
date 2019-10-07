@@ -3,7 +3,7 @@
 # Inspirations
 - Site structure
     - [Header](https://www.pinterest.se/pin/515591857341232577/)
-    - [Body] (https://www.pinterest.se/pin/307511480804672961/)
+    - [Body](https://www.pinterest.se/pin/307511480804672961/)
     - [Footer](https://www.pinterest.se/pin/468867011208278172/?nic=1)
 - Visuals
     - [Colours](https://www.georgebrown.ca/) (logo)
