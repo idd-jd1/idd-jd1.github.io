@@ -56,6 +56,7 @@
     - Admission Requirements
     - Course Exemptions
     - How to Apply
+    - Apply now!
 - Contact Us / Footer
     - Email
     - Address
